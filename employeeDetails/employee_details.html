@@ -1,0 +1,29 @@
+<!DOCTYPE html>  <!-- HTML5の宣言 -->
+<html>
+<head>
+  <title>Employee Management System</title>  <!-- ブラウザのタブに表示されるタイトル -->
+</head>
+<body>
+   <h1>Employee Management System</h1>  <!-- ページの見出し（大見出し） -->
+
+  <div>
+    <!-- 従業員一覧を表示するボタン -->
+    <button onclick="displayEmployees()">Display Employees</button>
+
+    <!-- 全従業員の給与合計を計算するボタン -->
+    <button onclick="calculateTotalSalaries()">Calculate Total Salaries</button>
+
+    <!-- 人事（HR）部門の従業員を表示するボタン -->
+    <button onclick="displayHREmployees()">Display HR Employees</button>
+
+    <!-- IDが3の従業員を検索するボタン -->
+    <button onclick="findEmployeeById(3)">Find Employee by ID 3</button>
+  </div>
+
+  <!-- 従業員情報を表示するための領域 -->
+  <div id="employeesDetails"></div>
+
+  <!-- 外部JavaScriptファイルを読み込む -->
+  <script src="./employee_details.js"></script>
+</body>
+</html>
