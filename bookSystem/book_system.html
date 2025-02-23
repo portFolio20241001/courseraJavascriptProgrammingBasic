@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ページの文字エンコーディングを設定 -->
+    <meta charset="UTF-8">
+    <!-- ページタイトル -->
+    <title>Book Management System</title>
+</head>
+<body>
+    <!-- システムのタイトル -->
+    <h1>Book Management System</h1>
+    
+    <!-- 書籍名の入力欄 -->
+    <label for="bookName">Book Name:</label><br>
+    <!-- 書籍名を入力するためのテキストフィールド -->
+    <input type="text" id="bookName"><br><br>
+
+    <!-- 著者名の入力欄 -->
+    <label for="authorName">Author Name:</label><br>
+    <!-- 著者名を入力するためのテキストエリア -->
+    <textarea id="authorName" rows="4"></textarea><br><br>
+
+    <!-- 書籍の説明欄 -->
+    <label for="bookDescription">Book Description</label><br>
+    <!-- 書籍の説明を入力するためのテキストエリア -->
+    <textarea id="bookDescription" rows="4"></textarea><br><br>
+
+    <!-- ページ数の入力欄 -->
+    <label for="pagesNumber">No. of Pages Time</label><br>
+    <!-- ページ数を入力するための数値フィールド -->
+    <input type="number" id="pagesNumber"><br><br>
+
+    <!-- 書籍情報を追加するボタン -->
+    <button onclick="addBook()">Add Book</button>
+
+    <!-- 書籍リストを表示するためのセクション -->
+    <h2>books</h2>
+    <div id="books">
+        <!-- ここに書籍が表示されます -->
+    </div>
+
+    <!-- 外部JavaScriptファイルの読み込み -->
+    <script src="./book_system.js"></script>
+</body>
+</html>
