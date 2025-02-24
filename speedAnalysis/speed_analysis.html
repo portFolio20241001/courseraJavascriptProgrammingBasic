@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピング速度テスト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 80%;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>タイピング速度テスト</h1>
+
+    <!-- テスト用の文章（固定） -->
+    <label for="inputText">以下の文章を入力してください:</label><br>
+    <textarea id="inputText" cols="50" rows="3" readonly></textarea><br>
+
+    <!-- ユーザーの入力エリア -->
+    <label for="userInput">あなたの入力:</label><br>
+    <textarea id="userInput" cols="50" rows="3" placeholder="ここに入力してください"></textarea><br>
+
+    <!-- ボタン -->
+    <button id="startBtn" onclick="startTest()">テスト開始</button>
+    <button id="endBtn" onclick="endTest()" disabled>テスト終了</button>
+
+    <!-- 結果表示 -->
+    <div id="output"></div>
+
+    <!-- 外部JavaScriptファイルを読み込む -->
+    <script src="./speed_analysis.js"></script>
+
+</body>
+</html>
