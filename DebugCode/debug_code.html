@@ -1,0 +1,21 @@
+<!DOCTYPE html>  <!-- HTML5の文書タイプを指定 -->
+<html lang="en">  <!-- 英語の言語設定を指定 -->
+
+<head>
+    <meta charset="UTF-8">  <!-- 文字エンコードをUTF-8に設定 -->
+    <title>Debugging Example</title>  <!-- ページのタイトルを設定 -->
+</head>
+
+<script src="./debug_code.js"></script>  <!-- 外部JavaScriptファイルを読み込む -->
+
+<body>
+    <h1>Debugging Example</h1>  <!-- ページ上に見出しを表示 -->
+    <label for="input1">Enter Number 1:</label>  <!-- 入力フィールド1のラベル -->
+    <input type="number" id="input1"><br><br>  <!-- 数字を入力するためのフィールド -->
+    <label for="input2">Enter Number 2:</label>  <!-- 入力フィールド2のラベル -->
+    <input type="number" id="input2"><br><br>  <!-- 数字を入力するためのフィールド -->
+    <button onclick="performOperation()">Perform Operation</button>  <!-- ボタンを押すとperformOperation関数が呼ばれる -->
+    <p id="result"></p>  <!-- 計算結果を表示するための空の段落 -->
+</body>
+
+</html>
