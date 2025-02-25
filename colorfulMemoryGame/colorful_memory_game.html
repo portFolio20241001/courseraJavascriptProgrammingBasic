@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- ページのタイトルを設定 -->
+    <title>Colorful Memory Match Game</title>
+    
+    <!-- 外部CSSファイルを読み込む -->
+    <link rel="stylesheet" href="./colorfulGame.css">
+</head>
+
+<body>
+    <!-- ゲームのタイトル -->
+    <h1>Colorful Memory Match Game</h1>
+    
+    <!-- ゲーム全体を囲むコンテナ -->
+    <div class="container">
+        
+        <!-- ゲームのカードを配置するエリア -->
+        <div id="game-container">
+            <!-- JavaScriptでカードを動的に生成 -->
+        </div>
+        
+        <!-- スコア、タイマー、スタートボタンのエリア -->
+        <div class="startMain">
+            <!-- 現在のスコアを表示する -->
+            <p id="score">Score: 0</p>
+            
+            <!-- 残り時間を表示する -->
+            <p id="timer">Time Left: 30</p>
+            
+            <!-- ゲームの開始・リスタートボタン -->
+            <button id="startbtn">Start/Restart</button>
+        </div>
+    </div>
+    
+    <!-- 外部JavaScriptファイルを読み込む -->
+    <script src="./colorful_memory_game.js"></script>
+</body>
+</html>

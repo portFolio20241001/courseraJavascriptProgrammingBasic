@@ -1,0 +1,102 @@
+/* body要素の基本スタイル設定 */
+body {
+    padding: 0; /* ページ全体の余白をなくす */
+    margin: 0; /* ページ全体のマージンをなくす */
+    background-color: #118ee1; /* 背景色を青系のカラーに設定 */
+    box-sizing: border-box; /* ボックスモデルの計算方法をborder-boxにする */
+
+    border:3px solid hsl(263, 100%, 4%);
+}
+
+/* 画面全体を中央揃えにするコンテナ */
+.container {
+    font-family: Arial, sans-serif; /* フォントをArial、なければsans-serifにする */
+    background-color: #a2dcda; /* 背景色を青系のカラーに設定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    height: 100vh; /* ビューポートの高さいっぱいに設定 */
+
+    border:3px solid hsl(264, 86%, 60%);
+}
+
+/* ゲーム開始画面のメイン要素 */
+.startMain {
+    margin-left: 20px; /* 左側に20pxの余白を設定 */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 垂直方向に中央揃え */
+    flex-direction: column; /* 子要素を縦方向に並べる */
+
+    border:3px solid hsl(323, 93%, 48%);
+}
+
+/* 見出し（h1）のスタイル */
+h1 {
+    color: #fff; /* 文字色を白に設定 */
+    text-align: center; /* テキストを中央揃え */
+
+    border:3px solid hsl(144, 97%, 48%);
+}
+
+/* ゲーム用のカードを並べるコンテナ */
+#game-container {
+    display: grid; /* グリッドレイアウトを適用 */
+    grid-template-columns: repeat(4, 100px); /* 4列 × 各列100px幅で作成 */
+    grid-gap: 10px; /* グリッドアイテム間の隙間を10pxに設定 */
+    background-color: #fff; /* 背景色を白に設定 */
+    padding: 10px; /* 内側の余白を10pxに設定 */
+    border-radius: 10px; /* 角を丸くする（10px） */
+
+    border:3px solid hsl(261, 97%, 48%);
+}
+
+/* ゲーム内のカードのスタイル */
+.card {
+    width: 100px; /* 幅を100pxに設定 */
+    height: 100px; /* 高さを100pxに設定 */
+    background-color: #ddd; /* 背景色を薄いグレーに設定 */
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+    font-size: 20px; /* 文字サイズを20pxに設定 */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    transition: background-color 0.3s; /* 背景色変更時に0.3秒かけてアニメーション */    
+    border-radius: 5px; /* 角を丸くする（5px） */
+
+    border:3px solid hsl(346, 91%, 56%);
+}
+
+/* マッチしたカードのスタイル */
+.matched {
+    background-color: #4CAF50; /* 背景色を緑に変更 */
+    color: #fff; /* 文字色を白に設定 */
+
+    border:3px solid hsl(62, 100%, 52%);
+}
+
+/* スコア表示のスタイル */
+#score {
+    text-align: center; /* テキストを中央揃え */
+    font-size: 24px; /* 文字サイズを24pxに設定 */
+    color: #fff; /* 文字色を白に設定 */
+
+    border:3px solid hsl(226, 96%, 46%);
+}
+
+/* タイマー表示のスタイル */
+#timer {
+    text-align: center; /* テキストを中央揃え */
+    font-size: 24px; /* 文字サイズを24pxに設定 */
+    color: #fff; /* 文字色を白に設定 */
+
+    border:3px solid hsl(42, 97%, 44%);
+}
+
+/* ゲーム開始ボタンのスタイル */
+#startbtn {
+    padding: 10px 20px; /* 上下10px、左右20pxの余白を設定 */
+    background-color: white; /* 背景色を白に設定 */
+    color: #ff0000; /* 文字色を青系のカラーに設定 */
+    border: none; /* ボーダーをなくす */
+    font-weight: 900; /* 文字を太字に設定 */
+}
